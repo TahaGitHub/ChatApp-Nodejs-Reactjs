@@ -1,0 +1,11 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.history
+
+# dependencies 
+/front-end-reactjs/node_modules
+/front-end-reactjs/package-lock.json
+/front-end-reactjs/yarn.lock
+
+/back-end-nodejs/node_modules
+/back-end-nodejs/yarn.lock

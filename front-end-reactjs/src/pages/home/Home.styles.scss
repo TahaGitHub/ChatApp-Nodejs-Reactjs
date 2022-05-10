@@ -1,0 +1,103 @@
+.homePage {
+  width: 100%;
+  text-align: -webkit-center;
+
+  // Connection Form
+  .form {
+    margin: 50px 0;
+    display: table-caption;
+    
+    input {
+      padding: 5px 30px;
+      text-align: center;
+    }
+
+    // Input Error Text
+    .invalid-name {
+      color: $red;
+      margin-top: 4px;
+    }
+
+    // Connection Button
+    .btn {
+      margin-top: 20px;
+      padding: 5px 30px;
+    }
+  }
+
+  // Chats Content
+  .chatsContainer {
+    max-width: 1000px;
+    // max-height: 850px;
+    margin: 10px;
+    margin-bottom: 50px;
+
+    
+    // Chat List Box Left Side
+    .chatslistBox {
+      position: relative;
+
+      padding: 10px;
+      width: 100%;
+      height: 500px;
+      
+      border: solid 1px $black;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      // Chats Count Shower
+      h6 {
+        text-align: start;
+      }
+
+      // Plus Icon to Open New Chat
+      .bi-plus {
+        position: absolute;
+        bottom: 3%;
+        right: 45%;
+        padding: 5px 10px;
+        font-size: 1.5rem;
+        border: solid 1px $black;
+        border-radius: 35px;
+      }
+
+      // Chats List
+      ul {
+        height: 80%;
+        overflow: auto;
+      }
+      
+      // Item List
+      .chatItemOfList {
+        width: 100%;
+        height: 75px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 20px;
+        margin: 10px 0;
+        
+        border: solid 1px $black;
+        border-radius: 10px;
+
+        .bi-trash {
+          color: $red;
+          font-size: 2rem;
+        }
+        
+      }
+    }
+    
+    // Chat's Message Box
+    .messageBox {
+      padding: 10px;
+
+      border: solid 1px $black;
+      border-inline-start: none;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}

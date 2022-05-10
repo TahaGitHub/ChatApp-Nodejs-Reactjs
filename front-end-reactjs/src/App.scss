@@ -1,0 +1,14 @@
+@import 'style/colors';
+@import 'style/variables';
+
+@import 'pages/home/Home.styles.scss';
+
+.App {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5% 0;
+}
