@@ -7,7 +7,7 @@ const ChatsContainer = ({ userName, socket }) => {
 
   useEffect(() => {
     if (chats.length === 0) {
-      setchats([socket])
+      setchats([{ id: null, messages: [] }])
     }
 
     // socket.on("message", function({id, msg}) {
@@ -20,7 +20,7 @@ const ChatsContainer = ({ userName, socket }) => {
   // Open New Chat
   function newChat () {
     console.log(`Open new chat. Chat's count ${chats.length} `);
-    setchats(prevArray => [...prevArray, socket])
+    setchats(prevArray => [...prevArray, { id: null, messages: [] }])
   }
 
   // Delete Chat
@@ -33,6 +33,7 @@ const ChatsContainer = ({ userName, socket }) => {
 
   return (
     <div className='row chatsContainer'>
+
       <div className="col chatslistBox">
         {/* Show chat count in top left for chat list box */}
         <h6>{chats.length} Chats</h6>
@@ -53,9 +54,25 @@ const ChatsContainer = ({ userName, socket }) => {
           <i className="bi bi-plus"></i>
         </span>
       </div>
+
       <div className='col-8 messageBox'>
-        Chat messages
+        <div className='messagesContent'>
+          Chat messages
+
+          <form className='row texterForm'>
+              <div className="col-9 div1">
+                <input type="text" className="text-start" placeholder="Message" />
+              </div>
+
+              <div className="col-3 div2">
+                <button type="submit" className="btn">
+                  <i className='bi bi-send-fill'></i>
+                </button>
+              </div>
+          </form>
+        </div>
       </div>
+
     </div>
   );
 }
