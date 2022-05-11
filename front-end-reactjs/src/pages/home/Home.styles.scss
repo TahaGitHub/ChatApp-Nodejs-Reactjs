@@ -31,8 +31,9 @@
     // max-height: 850px;
     margin: 10px;
     margin-bottom: 50px;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
 
-    
     // Chat List Box Left Side
     .chatslistBox {
       position: relative;
@@ -60,23 +61,34 @@
       // Item List
       .chatItemOfList {
         width: 100%;
-        height: 75px;
+        height: 50px;
         
         display: flex;
-        align-items: center;
         justify-content: space-between;
 
-        padding: 0 20px;
         margin: 10px 0;
         
         border: $mainChatsBorder;
         border-radius: 10px;
-
-        .bi-trash {
-          color: $darkRed;
-          font-size: 2rem;
-        }
         
+        box-shadow: $box-botton-shadow;
+        
+        .itemText {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+
+        .itemTrash {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+          .bi-trash {
+            color: $darkRed;
+            font-size: 2rem;
+          }
+        }
       }
 
       // Plus Icon to Open New Chat
@@ -91,56 +103,108 @@
       }
     }
     
-    // Chat's Message Box
-    .messageBox {
+    
+    // Chat's Messages Box Right side
+    .messagesBox {
       padding: 5px;
-
+      
       border: $mainChatsBorder;
       border-inline-start: none;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
-
-      .messagesContent {
+      
+      .chatContent {
+        height: 100%;
         border: $mainChatsBorder;
         border-radius: 10px;
-        height: 100%;
         
-        .texterForm {
-          width: 100%;
-          position: absolute;
-          bottom: 4%;
-          right: 0;
-          
-          .div1 {
-            padding: 0;
-          }
-          .div2 {
-            padding-right: 30px;
-          }
-          
-          input {
-            width: 100%;
-            height: 75px;
-            
-            padding: 15px;
+        .ChatSelected {
+          height: 480px;
 
-            font-size: 1.5rem;
-            border-radius: 25px;
+          // Chats List
+          ul {
+            height: 80%;
+            overflow: auto;
+            margin: 10px;
+
+            .scroller {
+              padding-bottom: 150px;
+            }
           }
-  
-          button {
+
+          // Message Style
+          .messageBox {
+            max-width: 500px;
+            width: fit-content;
+            padding: 15px;
+            word-break: break-word;
+            margin: 10px 0;
+            
+            border: $mainChatsBorder;
+            border-radius: 10px;
+            text-align: start;
+
+            h6 {
+              display: table;
+              font-weight: 300;
+              color: $gray;
+            }
+          }
+
+          .leftBox {
+            margin-right: auto;
+          }
+          
+          .rightBox {
+            margin-left: auto;
+          }
+        
+          // Bottom Object Text Input & Send Button
+          .texterForm {
             width: 100%;
-            height: 75px;
-            border-radius: 25px;
-  
-            .bi-send-fill {
-              color: $blue;
-              font-size: 2.5rem;
+            position: absolute;
+            bottom: 4%;
+            right: 0;
+            
+            .div1 {
+              padding: 0;
+            }
+            .div2 {
+              margin: auto;
+              padding-right: 7%;
+            }
+            
+            input {
+              width: 100%;
+              height: 75px;
+              
+              padding: 15px;
+    
+              font-size: 1.5rem;
+              border-radius: 25px;
+            }
+    
+            .sendButton {
+              border-radius: 25px;
+    
+              .bi-send-fill {
+                color: $blue;
+                font-size: 3rem;
+              }
             }
           }
         }
-      }
 
+        // Show Center Box when no chat selected
+        .noChatSelected {
+          height: 100%;
+          font-weight: bolder;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $green;
+        }
+      }
     }
   }
 }
