@@ -17,7 +17,7 @@ Without any error, you must see **Listening to 30003** when server running and *
 ## Run Project With Docker
 
 More easy to run the project just:
-- Pull the project's image `docker pull 121180073/chatapp-nodejs-reactjs` ...
+- Pull the project's image `docker pull 121180073/chatapp-nodejs-reactjs`
 - Check the image `docker images`
 - And run the image `docker run -p 3000:3000 -p 30003:30003 121180073/chatapp-nodejs-reactjs`
 
