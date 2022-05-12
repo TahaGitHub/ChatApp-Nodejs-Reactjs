@@ -10,7 +10,7 @@ Clone the project by running `git clone https://github.com/TahaGitHub/ChatApp-No
 Now we have two terminal, let's run both Server and GUI projects:
 - In first terminal we have to install packages by `npm --prefix ./back-end-nodejs/ install` and run to project by `npm --prefix ./back-end-nodejs/ start`
 
-- In second terminal we also have to install and run project with same install & run previous commands but with other project's directory `npm --prefix ./front-end-reactjs/ install` & `npm --prefix ./front-end-reactjs/ start`. 
+- In second terminal we also have to install and run project with same install and run previous commands but with other project's directory `npm --prefix ./front-end-reactjs/ install` && `npm --prefix ./front-end-reactjs/ start`. 
 
 Without any error, you must see **Listening to 30003** when server running and **webpack compiled successfully** when React GUI running.
 
