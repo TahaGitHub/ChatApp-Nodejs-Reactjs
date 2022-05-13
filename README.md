@@ -22,3 +22,8 @@ More easy to run the project just:
 - And run the image `docker run -p 3000:3000 -p 30003:30003 121180073/chatapp-nodejs-reactjs`
 
 Can access the GUI from [http://localhost:3000/](http://localhost:3000/)
+
+## Demo
+
+![ChatApp-Demo](https://user-images.githubusercontent.com/68125916/168143618-6f782850-018e-4986-a350-c0fa39bbdb2a.gif)
+
