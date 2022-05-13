@@ -1,4 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 .history
 
@@ -10,3 +9,5 @@
 /back-end-nodejs/node_modules
 /back-end-nodejs/package-lock.json
 /back-end-nodejs/yarn.lock
+
+README.md
