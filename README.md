@@ -1,5 +1,7 @@
 # ChatApp By Node-Js & React-Js
 
+Training Application.
+
 ChatApp project has both side front-end side built by [React Js](https://reactjs.org/) & back-end side built by [Node.Js](https://nodejs.org/en/) and [Socket.io](https://socket.io/).
 
 
